@@ -1,0 +1,57 @@
+{
+	"suggest.noselect": false,
+	"diagnostic.errorSign": "✘",
+	"diagnostic.warningSign": "!",
+	"diagnostic.infoSign": "?",
+	"diagnostic.checkCurrentLine": true,
+	"coc.preferences.formatOnSave": true,
+	"languageserver": {
+		"terraform": {
+			"command": "terraform-ls",
+			"args": [
+				"serve"
+			],
+			"filetypes": [
+				"terraform",
+				"tf"
+			],
+			"initializationOptions": {},
+			"settings": {}
+		},
+		"golang": {
+			"command": "gopls",
+			"rootPatterns": [
+				"go.mod"
+			],
+			"filetypes": [
+				"go"
+			]
+		},
+		"flow": {
+			"command": "flow",
+			"args": [
+				"lsp"
+			],
+			"filetypes": [
+				"javascript",
+				"javascriptreact"
+			],
+			"initializationOptions": {},
+			"requireRootPattern": true,
+			"settings": {},
+			"rootPatterns": [
+				".flowconfig"
+			]
+		},
+		"erl": {
+			"command": "erlang_ls",
+			"filetypes": [
+				"erl",
+				"erlang"
+			]
+		}
+	},
+	"go.goplsOptions": {
+		"staticcheck": true
+	}
+}
