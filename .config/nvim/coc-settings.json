@@ -5,7 +5,25 @@
 	"diagnostic.infoSign": "?",
 	"diagnostic.checkCurrentLine": true,
 	"coc.preferences.formatOnSave": true,
+	"inlayHint.enable": false,
 	"languageserver": {
+		"pyright": {
+			"command": "pyright-langserver",
+			"args": [
+				"--stdio"
+			],
+			"filetypes": [
+				"python"
+			],
+			"rootPatterns": [
+				".git",
+				"pyrightconfig.json"
+			],
+			"settings": {
+				"python.analysis.typeCheckingMode": "basic",
+				"typeCheckingMode": "off"
+			}
+		},
 		"terraform": {
 			"command": "terraform-ls",
 			"args": [

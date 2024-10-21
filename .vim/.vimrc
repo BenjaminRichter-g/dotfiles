@@ -7,6 +7,15 @@ set tabstop=4
 
 set shiftwidth=4
 
+set number
+
+
+inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+
+inoremap <silent><expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
+
+colorscheme OceanicNext
+
 " set to 1, nvim will open the preview window after entering the Markdown buffer
 " default: 0
 let g:mkdp_auto_start = 0
@@ -199,4 +208,10 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 
 " COC CONQUER OF COMPLETION SETUP
+
+" GoTo code navigation
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 

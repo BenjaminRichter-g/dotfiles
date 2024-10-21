@@ -1,1 +1,11 @@
-{}
+{
+  "coc-json|global": {
+    "json-schema-cache": {
+      "https://raw.githubusercontent.com/microsoft/pyright/main/packages/vscode-pyright/schemas/pyrightconfig.schema.json": {
+        "etag": "W/\"b1904f3e2593fafcbf84076ecb24d3369e63435872a46b2767862f426da77f00\"",
+        "fileName": "85988a77438fec052521de69f0a86f93.schema.json",
+        "updateTime": 1728993724098
+      }
+    }
+  }
+}
