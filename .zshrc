@@ -111,6 +111,14 @@ source $ZSH/oh-my-zsh.sh
 alias ls="ls -la --color=auto"
 
 alias p="cd ..; ls"
+alias please="sudo"
+
+
+# Custom commands 
+
+# Init a python project 
+
+alias create-py="touch requirements.txt .gitignore; python3 -m venv venv"
 
 
 #KUBERNETES ALIASES
