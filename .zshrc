@@ -118,8 +118,8 @@ alias please="sudo"
 
 # PYTHON
 # Init a python project 
-alias create-py="touch requirements.txt .gitignore; python3 -m venv venv"
-alias start-py="source venv/bin/activate"
+alias create-py="touch requirements.txt .gitignore; python3 -m venv .venv"
+alias start-py="source .venv/bin/activate"
 
 #KUBERNETES ALIASES
 
