@@ -14,7 +14,7 @@ inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 
 inoremap <silent><expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
-colorscheme OceanicNext
+colorscheme tokyonight
 
 " set to 1, nvim will open the preview window after entering the Markdown buffer
 " default: 0
