@@ -114,6 +114,19 @@ alias p="cd ..; ls"
 alias please="sudo"
 
 
+# Relaunch nvim in this pane, reusing the pane's socket
+ns() {
+  if [[ -z "$NVIM_LISTEN_ADDRESS" ]]; then
+    echo "NVIM_LISTEN_ADDRESS not set in this shell."
+    echo "If this is a new pane, run your startup script (next/read) first."
+    return 1
+  fi
+
+  rm -f "$NVIM_LISTEN_ADDRESS"
+  command nvim --listen "$NVIM_LISTEN_ADDRESS" "$@"
+}
+
+
 # Custom commands 
 
 # PYTHON
