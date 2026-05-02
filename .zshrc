@@ -168,3 +168,4 @@ export PATH="/Users/b3n/.antigravity/antigravity/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export FZF_BASE=$(brew --prefix)/opt/fzf
